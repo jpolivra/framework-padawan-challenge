@@ -13,6 +13,21 @@
       color: #232323;
       font-size: 24px;
     }
+    .searchBar {
+      height: 30px;
+      line-height: 30px;
+      box-sizing: border-box;
+      padding: 0px 15px 0px 30px;
+      border: 1px solid #e3e3e3;
+      color: #232323;
+      outline: none;
+      border-radius: 15px;
+      margin-right: 10px;
+      transition: border-color 0.2s ease;
+      background: #fff url("../images/main/header/search-icon.png") 8px 5px
+        no-repeat;
+      background-size: 20px;
+    }
   }
 }
 
