@@ -1,5 +1,12 @@
+.home-page-header {
+  .post-header {
+    padding-bottom: 0px;
+  }
+}
+
 .posts-main {
   .container {
+    padding-top: 0px;
     .posts-list {
       list-style: none;
       .post {
@@ -36,6 +43,11 @@
 }
 
 @media (max-width: 768px) {
+  .posts-main {
+    .container {
+      padding-top: 10px;
+    }
+  }
   .post-header {
     display: flex;
     flex-direction: column;
@@ -43,6 +55,11 @@
 }
 
 @media (max-width: 414px) {
+  .posts-main {
+    .container {
+      padding-top: 0px;
+    }
+  }
   .post-header {
     .headerNav {
       a {
