@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--   Header   -->
@@ -22,7 +26,7 @@
           src="./public/images/main/header/inicio-logo.svg"
           alt="Padawans Logo"
         />
-        <a href="#">Sobre</a>
+        <a href="#sobre">Sobre</a>
       </div>
     </header>
 
@@ -33,7 +37,12 @@
     <section class="home-main-tables">
       <div class="container">
         <div class="card">
-          <div class="imgBx"></div>
+          <div class="imgBx" data-text="Posts">
+            <img
+              src="./public/images/main/cards/posts-icon.png"
+              alt="Postagens"
+            />
+          </div>
           <div class="content">
             <div>
               <h3>Postagens</h3>
@@ -41,12 +50,17 @@
                 Fique por dentro de todas as postagens geradas através da API
                 JsonPlaceHolder.
               </p>
-              <a href="#">Acessar</a>
+              <a href="./public/pages/posts.html">Acessar</a>
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="imgBx"></div>
+          <div class="imgBx" data-text="Albuns">
+            <img
+              src="./public/images/main/cards/gallery-icon.png"
+              alt="Galeria"
+            />
+          </div>
           <div class="content">
             <div>
               <h3>Albuns</h3>
@@ -54,12 +68,14 @@
                 Fique por dentro de todos os albuns gerados através da API
                 JsonPlaceHolder.
               </p>
-              <a href="#">Acessar</a>
+              <a href="./public/pages/albuns.html">Acessar</a>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="imgBx"></div>
+        <div class="card" style="margin: 0 auto">
+          <div class="imgBx" data-text="TODOs">
+            <img src="./public/images/main/cards/todo-icon.png" alt="Todos" />
+          </div>
           <div class="content">
             <div>
               <h3>TO-DOs</h3>
@@ -67,15 +83,41 @@
                 Fique por dentro de todos os TO-DOs gerados através da API
                 JsonPlaceHolder.
               </p>
-              <a href="#">Acessar</a>
+              <a href="./public/pages/todos.html">Acessar</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="home-about"></section>
-    <footer>
-      <p>desenvolvido por <span>thxjao</span> - github.com/thxjao</p>
+    <section class="home-about" id="sobre">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>
+          Este projeto foi desenvolvido durante o processo seletivo Framework
+          Padawans da empresa Framework Digital, pelo qual deseja adquirir
+          pessoas que tenham imensa vontade de aprender e determinação, o
+          projeto se trata da construção de 3 telas, pelo qual cada uma delas
+          deve ter uma tabela contendo informações que devem ser obtidas através
+          da API JsonPlaceholder.
+        </p>
+        <h4>Quem sou?</h4>
+        <p>
+          Meu nome é João Pedro, atualmente cursando graduação em Análise e
+          Desenvolvimento de Sistemas, tenho conhecimento em CSS3, HTML5,
+          Javascript Vanilla, GIT e Sistemas Linux. Nesse exato momento estou me
+          aprofundando em frameworks Front-end (No exato momento VueJS)e também
+          no mundo do Back-end e Banco de dados (NodeJS e MongoDB), com o
+          objetivo de um dia poder me tornar um desenvolvedor Fullstack
+          especialista em uma das áreas.
+        </p>
+        <a href="https://github.com/thxjao">Github</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>desenvolvido por <span>thxjao</span> - github.com/thxjao</p>
+      </div>
     </footer>
   </body>
+  <script src="./public/scripts/main.js" type="module"></script>
 </html>
