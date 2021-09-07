@@ -262,5 +262,53 @@ img {
 .footer.subfooter {
   background: #fffffe;
 }
+.footer.subfooter p {
+  opacity: 0.4;
+}
+
+.posts-main .container .posts-list {
+  list-style: none;
+}
+.posts-main .container .posts-list .post {
+  font-family: "Montserrat", sans-serif;
+  background: #e6e6e6;
+  margin: 25px 0;
+  padding: 15px 10px;
+}
+.posts-main .container .posts-list .post .title {
+  text-decoration: none;
+  color: #4e4848;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.posts-main .container .posts-list .post .border {
+  width: 20%;
+  height: 1px;
+  background: #dee2e6;
+  margin: 9px 0 7px;
+}
+.posts-main .container .posts-list .post .transition {
+  transition: All 0.2s ease;
+}
+.posts-main .container .posts-list .post p {
+  color: #222525;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .post-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 414px) {
+  .post-header .headerNav a {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
