@@ -1,0 +1,28 @@
+.albuns-lista {
+  list-style: none;
+  li {
+    margin: 25px 0;
+    background: #e6e6e6;
+    color: #4e4848;
+    padding: 10px 15px;
+    a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      color: #4e4848;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    div.albuns-x {
+      width: 20%;
+      height: 1px;
+      background: #dee2e6;
+      margin: 9px 0 7px;
+    }
+    .album-sub {
+      font-family: "Montserrat", sans-serif;
+      color: #4e4848;
+      font-size: 18px;
+    }
+  }
+}
