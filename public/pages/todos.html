@@ -20,7 +20,9 @@
   <body>
     <header class="home-page-header">
       <div class="container post-header">
-        <img src="../images/main/header/todos-logo.svg" alt="Padawans Logo" />
+        <a href="../../index.html">
+          <img src="../images/main/header/todos-logo.svg" alt="Padawans Logo"
+        /></a>
         <div class="headerNav">
           <input
             type="text"
@@ -32,10 +34,27 @@
         </div>
       </div>
     </header>
+    <main class="todos-main">
+      <div class="container main-container">
+        <div class="header-options">
+          <h1>Atividades</h1>
+          <div class="options">
+            <label for="state" class="dropdown-label"> Filtrar: </label>
+            <select name="state" id="state" class="select">
+              <option value="todos">Todas</option>
+              <option value="true">Concluídas</option>
+              <option value="false">Pendentes</option>
+            </select>
+          </div>
+        </div>
+        <ul class="todos-list" id="todosList"></ul>
+      </div>
+    </main>
     <footer class="footer subfooter">
       <div class="container">
         <p>desenvolvido por <span>thxjao</span> - github.com/thxjao</p>
       </div>
     </footer>
   </body>
+  <script src="../scripts/todos.js"></script>
 </html>
